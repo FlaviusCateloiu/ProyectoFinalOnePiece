@@ -1,5 +1,6 @@
 package com.app.proyectofinalonepiece;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,22 +56,23 @@ public class RecycleViewPirataFragment extends Fragment {
             return new PirataViewHolder(ItemPirataBinding.inflate(getLayoutInflater(), parent, false));
         }
 
+        @SuppressLint("SetTextI18n")
         @Override
         public void onBindViewHolder(@NonNull PirataViewHolder holder, int position) {
             Pirata pirata = piratas.get(position);
 
-            holder.binding.nombrePirataView.setText(pirata.getNombre());
+            holder.binding.nombrePirataView.setText(pirata.getApellido() + " " +pirata.getNombre());
 
-            /********** Cambiar la ruta de donde coge la imagen. *******************/
+            /* ********* Cambiar la ruta de donde coge la imagen. ****************** */
             Glide.with(RecycleViewPirataFragment.this)
-                    .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + pirata.getId() + ".png")
+                    .load("https://github.com/FlaviusCateloiu/ProyectoFinalOnePieceAPI/blob/master/src/main/resources/static/" + pirata.getId() + ".jpg")
                     .centerCrop()
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .into(holder.binding.fotoPirataView);
 
             holder.itemView.setOnClickListener(view -> {
                 pirataViewModel.seleccionar(pirata);
-                navController.navigate(R.id.action_recycleViewPokemonFragment_to_detailsPokemonFragment);
+                navController.navigate(R.id.action_recycleViewPirataFragment_to_mostrarPirataFragment);
             });
         }
 
@@ -79,8 +81,8 @@ public class RecycleViewPirataFragment extends Fragment {
             return piratas != null ? piratas.size() : 0;
         }
 
-        public void establecerLista(ArrayList<Pirata> pokemons) {
-            this.piratas = pokemons;
+        public void establecerLista(ArrayList<Pirata> piratas) {
+            this.piratas = piratas;
             notifyDataSetChanged();
         }
     }

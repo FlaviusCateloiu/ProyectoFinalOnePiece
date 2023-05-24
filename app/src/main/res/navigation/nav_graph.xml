@@ -9,5 +9,14 @@
         android:id="@+id/recycleViewPirataFragment"
         android:name="com.app.proyectofinalonepiece.RecycleViewPirataFragment"
         android:label="fragment_recycle_view_pirata"
-        tools:layout="@layout/fragment_recycle_view_pirata" />
+        tools:layout="@layout/fragment_recycle_view_pirata" >
+        <action
+            android:id="@+id/action_recycleViewPirataFragment_to_mostrarPirataFragment"
+            app:destination="@id/mostrarPirataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarPirataFragment"
+        android:name="com.app.proyectofinalonepiece.MostrarPirataFragment"
+        android:label="fragment_mostrar_pirata"
+        tools:layout="@layout/fragment_mostrar_pirata" />
 </navigation>

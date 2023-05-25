@@ -25,7 +25,7 @@ public class PirataViewModel extends AndroidViewModel {
         pirataMutableLiveData.setValue(pirata);
     }
 
-    public MutableLiveData<Pirata> getPirataMutableLiveData() {
+    public MutableLiveData<Pirata> getPirata() {
         return pirataMutableLiveData;
     }
 

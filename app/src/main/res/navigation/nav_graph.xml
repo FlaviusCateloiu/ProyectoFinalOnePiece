@@ -19,4 +19,18 @@
         android:name="com.app.proyectofinalonepiece.MostrarPirataFragment"
         android:label="fragment_mostrar_pirata"
         tools:layout="@layout/fragment_mostrar_pirata" />
+    <fragment
+        android:id="@+id/recycleViewMarineFragment"
+        android:name="com.app.proyectofinalonepiece.RecycleViewMarineFragment"
+        android:label="fragment_recycle_view_marine"
+        tools:layout="@layout/fragment_recycle_view_marine" >
+        <action
+            android:id="@+id/action_recycleViewMarineFragment_to_mostrarMarineFragment"
+            app:destination="@id/mostrarMarineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarMarineFragment"
+        android:name="com.app.proyectofinalonepiece.MostrarMarineFragment"
+        android:label="fragment_mostrar_marine"
+        tools:layout="@layout/fragment_mostrar_marine" />
 </navigation>

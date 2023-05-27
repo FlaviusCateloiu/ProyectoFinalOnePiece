@@ -1,6 +1,5 @@
 package com.app.proyectofinalonepiece;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,9 +16,7 @@ import android.view.ViewGroup;
 
 import com.app.proyectofinalonepiece.databinding.FragmentRecycleViewArmaBinding;
 import com.app.proyectofinalonepiece.databinding.ItemArmaBinding;
-import com.app.proyectofinalonepiece.databinding.ItemMarineBinding;
 import com.app.proyectofinalonepiece.models.Arma;
-import com.app.proyectofinalonepiece.models.Marine;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 

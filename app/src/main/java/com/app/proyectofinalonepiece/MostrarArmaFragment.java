@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.app.proyectofinalonepiece.databinding.FragmentMostrarArmaBinding;
-import com.app.proyectofinalonepiece.databinding.FragmentMostrarMarineBinding;
 import com.app.proyectofinalonepiece.models.Arma;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;

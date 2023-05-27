@@ -47,4 +47,18 @@
         android:name="com.app.proyectofinalonepiece.MostrarArmaFragment"
         android:label="fragment_mostrar_arma"
         tools:layout="@layout/fragment_mostrar_arma" />
+    <fragment
+        android:id="@+id/recycleViewIslaFragment"
+        android:name="com.app.proyectofinalonepiece.RecycleViewIslaFragment"
+        android:label="fragment_recycle_view_isla"
+        tools:layout="@layout/fragment_recycle_view_isla" >
+        <action
+            android:id="@+id/action_recycleViewIslaFragment_to_mostrarIslaFragment"
+            app:destination="@id/mostrarIslaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarIslaFragment"
+        android:name="com.app.proyectofinalonepiece.MostrarIslaFragment"
+        android:label="fragment_mostrar_isla"
+        tools:layout="@layout/fragment_mostrar_isla" />
 </navigation>

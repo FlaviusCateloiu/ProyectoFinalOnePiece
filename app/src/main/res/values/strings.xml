@@ -4,4 +4,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="full_name_pirata">Full Name Pirata</string>
     <string name="full_name_marine">Full Name Marine</string>
+    <string name="full_name_arma">Full Name Arma</string>
 </resources>

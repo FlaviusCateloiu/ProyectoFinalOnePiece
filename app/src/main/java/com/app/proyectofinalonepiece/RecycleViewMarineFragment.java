@@ -16,11 +16,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.proyectofinalonepiece.databinding.FragmentRecycleViewMarineBinding;
-import com.app.proyectofinalonepiece.databinding.FragmentRecycleViewPirataBinding;
 import com.app.proyectofinalonepiece.databinding.ItemMarineBinding;
-import com.app.proyectofinalonepiece.databinding.ItemPirataBinding;
 import com.app.proyectofinalonepiece.models.Marine;
-import com.app.proyectofinalonepiece.models.Pirata;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 

@@ -33,4 +33,18 @@
         android:name="com.app.proyectofinalonepiece.MostrarMarineFragment"
         android:label="fragment_mostrar_marine"
         tools:layout="@layout/fragment_mostrar_marine" />
+    <fragment
+        android:id="@+id/recycleViewArmaFragment"
+        android:name="com.app.proyectofinalonepiece.RecycleViewArmaFragment"
+        android:label="fragment_recycle_view_arma"
+        tools:layout="@layout/fragment_recycle_view_arma" >
+        <action
+            android:id="@+id/action_recycleViewArmaFragment_to_mostrarArmaFragment"
+            app:destination="@id/mostrarArmaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarArmaFragment"
+        android:name="com.app.proyectofinalonepiece.MostrarArmaFragment"
+        android:label="fragment_mostrar_arma"
+        tools:layout="@layout/fragment_mostrar_arma" />
 </navigation>

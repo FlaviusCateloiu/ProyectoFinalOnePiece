@@ -61,4 +61,18 @@
         android:name="com.app.proyectofinalonepiece.MostrarIslaFragment"
         android:label="fragment_mostrar_isla"
         tools:layout="@layout/fragment_mostrar_isla" />
+    <fragment
+        android:id="@+id/recycleViewFrutaDelDiabloFragment"
+        android:name="com.app.proyectofinalonepiece.RecycleViewFrutaDelDiabloFragment"
+        android:label="fragment_recycle_view_fruta_del_diablo"
+        tools:layout="@layout/fragment_recycle_view_fruta_del_diablo" >
+        <action
+            android:id="@+id/action_recycleViewFrutaDelDiabloFragment_to_mostrarFrutaDelDiabloFragment"
+            app:destination="@id/mostrarFrutaDelDiabloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mostrarFrutaDelDiabloFragment"
+        android:name="com.app.proyectofinalonepiece.MostrarFrutaDelDiabloFragment"
+        android:label="fragment_mostrar_fruta_del_diablo"
+        tools:layout="@layout/fragment_mostrar_fruta_del_diablo" />
 </navigation>

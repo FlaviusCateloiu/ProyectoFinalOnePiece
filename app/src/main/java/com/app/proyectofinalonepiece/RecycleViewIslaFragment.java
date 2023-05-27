@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.app.proyectofinalonepiece.databinding.FragmentRecycleViewIslaBinding;
-import com.app.proyectofinalonepiece.databinding.ItemArmaBinding;
 import com.app.proyectofinalonepiece.databinding.ItemIslaBinding;
 import com.app.proyectofinalonepiece.models.Isla;
 import com.bumptech.glide.Glide;
